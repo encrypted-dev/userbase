@@ -85,9 +85,9 @@ export interface DeleteOperation {
   itemId: string
 }
 
-export interface Item {
+export interface Item<T = any> {
   itemId: string
-  item: any
+  item: T
   createdBy: Attribution
   updatedBy?: Attribution
   fileId?: string
